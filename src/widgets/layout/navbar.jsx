@@ -62,10 +62,18 @@ export function Navbar({ brandName, routes, action }) {
 
   return (
     <MTNavbar color="transparent" className="p-3">
+      <div class="container mx-auto flex items-start justify-between">
+        {/* Logo */}
+      <img
+        src="https://web.whatsapp.com/833be859-565b-4657-9797-83c9a4a943ea"
+        alt="Logo"
+        className="w-12 h-12 absolute top-4 left-4"
+      />
+      </div>
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-            {brandName}
+            SEDA - Sustainable Ecosystem Developement Assosiation
           </Typography>
         </Link>
         <div className="hidden lg:block">{navList}</div>
@@ -75,7 +83,7 @@ export function Navbar({ brandName, routes, action }) {
             target="_blank"
           >
             <Button variant="text" size="sm" color="white" fullWidth>
-              pro version
+              About Us
             </Button>
           </a>
           {React.cloneElement(action, {
@@ -128,7 +136,7 @@ Navbar.defaultProps = {
       target="_blank"
     >
       <Button variant="gradient" size="sm" fullWidth>
-        free download
+        Support Us
       </Button>
     </a>
   ),

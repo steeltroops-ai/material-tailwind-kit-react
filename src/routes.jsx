@@ -5,6 +5,7 @@ import {
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
   DocumentTextIcon,
+ 
 } from "@heroicons/react/24/solid";
 
 export const routes = [
@@ -22,19 +23,19 @@ export const routes = [
   },
   {
     icon: ArrowRightOnRectangleIcon,
-    name: "Sign In",
+    name: "Stories",
     path: "/sign-in",
     element: <SignIn />,
   },
   {
     icon: UserPlusIcon,
-    name: "Sign Up",
+    name: "Stories & Publications",
     path: "/sign-up",
     element: <SignUp />,
   },
   {
     icon: DocumentTextIcon,
-    name: "Docs",
+    name: "About Us",
     href: "https://www.material-tailwind.com/docs/react/installation",
     target: "_blank",
     element: "",
